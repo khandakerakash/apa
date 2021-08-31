@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fLmHrQ63LHlLXKly5qacK+hA6YpjHpzxezVVuqohJXjK2IyfsFugM8oi6g0WNelZ7Q2RwrlWxmCycN5x94V9FQ==",
+  "success": true,
+  "projectFilePath": "E:\\Practices\\Repos\\APA\\APA.ADMIN.APPLICATION\\APA.ADMIN.APPLICATION.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\R041910075\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}
