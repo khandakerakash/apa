@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using APA.ADMIN.API.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -24,6 +25,12 @@ namespace APA.ADMIN.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.AddControllers();
+               
+            services.AddRouting(options => options.LowercaseUrls = true);
+
+            services.AddSwagger("APA ADMIN API", "These are the admin APIs endpoints of the Portfolio Web  Application of Khandaker Akash.");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
