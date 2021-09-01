@@ -30,7 +30,7 @@ namespace APA.ADMIN.API
                
             services.AddRouting(options => options.LowercaseUrls = true);
 
-            services.AddSwagger("APA ADMIN API", "These are the admin APIs endpoints of the Portfolio Web  Application of Khandaker Akash.");
+            services.AddSwagger("APA ADMIN API", "These are the admin APIs endpoints of the Portfolio Web  Application of Khandaker Akash (APA).");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +42,9 @@ namespace APA.ADMIN.API
             }
 
             app.UseRouting();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "APA.ADMIN.API v1"));
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {
